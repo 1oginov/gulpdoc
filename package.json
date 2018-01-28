@@ -1,10 +1,10 @@
 {
   "name": "gulpdoc",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Documentation generator for Gulp tasks",
-  "main": "index.js",
+  "main": "./src/Gulpdoc.js",
   "scripts": {
-    "lint": "eslint ./index.js"
+    "lint": "eslint ./src/"
   },
   "repository": {
     "type": "git",
@@ -13,9 +13,9 @@
   "keywords": [
     "gulp",
     "doc",
-    "docs",
     "documentation",
-    "generator"
+    "generator",
+    "tasks"
   ],
   "author": "Danila Loginov <danila@loginov.rocks> (https://loginov.rocks)",
   "license": "MIT",
@@ -23,8 +23,11 @@
     "url": "https://github.com/1oginov/gulpdoc/issues"
   },
   "homepage": "https://github.com/1oginov/gulpdoc",
+  "dependencies": {
+    "comments-extractor": "^1.0.0"
+  },
   "devDependencies": {
-    "eslint": "^4.15.0",
+    "eslint": "^4.16.0",
     "eslint-config-google": "^0.9.1"
   }
 }
