@@ -1,6 +1,6 @@
 {
   "name": "gulpdoc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Documentation generator for Gulp tasks",
   "main": "./src/Gulpdoc.js",
   "scripts": {
