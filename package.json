@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Documentation generator for Gulp tasks",
   "main": "./src/Gulpdoc.js",
+  "bin": "./src/cli.js",
   "scripts": {
     "lint": "eslint ./src/"
   },
