@@ -5,7 +5,7 @@
 
 Documentation generator for Gulp tasks.
 
-## Quick Start
+## Quick start
 
 ### Install
 
