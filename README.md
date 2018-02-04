@@ -83,7 +83,7 @@ Gulpdoc class.
 **Kind**: global class
 
 * [Gulpdoc](#gulpdoc-1)
-  * [getTasks(pattern, [annotation], [options]) ⇒ Array.<Task>](#gettaskspattern-annotation-options--arraytask)
+  * [getTasks(pattern, [annotation], [options]) ⇒ Array.&lt;Task&gt;](#gettaskspattern-annotation-options--arraytask)
 
 ---
 
