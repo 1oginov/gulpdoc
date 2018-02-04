@@ -11,7 +11,7 @@ class Gulpdoc {
    * @param {string} pattern Glob pattern
    * @param {string} [annotation='gulptask'] Annotation
    * @param {Object} [options={}] Glob options
-   * @return {Array}
+   * @return {Array<Task>}
    */
   static getTasks(pattern, annotation = 'gulptask', options = {}) {
     const extractor = new CommentsExtractor(pattern, annotation, options);

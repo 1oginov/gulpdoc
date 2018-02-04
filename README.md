@@ -83,17 +83,17 @@ Gulpdoc class.
 **Kind**: global class
 
 * [Gulpdoc](#gulpdoc-1)
-  * [getTasks(pattern, [annotation], [options]) ⇒ Array](#gettaskspattern-annotation-options--array)
+  * [getTasks(pattern, [annotation], [options]) ⇒ Array.<Task>](#gettaskspattern-annotation-options--arraytask)
 
 ---
 
-#### `getTasks(pattern, [annotation], [options])` ⇒ `Array`
+#### `getTasks(pattern, [annotation], [options])` ⇒ `Array.<Task>`
 
 Get tasks.
 
 **Kind**: static method of `Gulpdoc`
 
-**Returns**: `Array` of `Task` objects containing `name` and `description` properties
+**Returns**: `Array.<Task>`, where `Task` object contains `name` and `description` properties
 
 | Parameter    | Type     | Default      | Description  |
 | ------------ | -------- | ------------ | ------------ |
