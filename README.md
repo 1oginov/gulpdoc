@@ -1,7 +1,8 @@
 # gulpdoc
 
-[![dependencies Status](https://david-dm.org/1oginov/gulpdoc/status.svg)](https://david-dm.org/1oginov/gulpdoc)
-[![devDependencies Status](https://david-dm.org/1oginov/gulpdoc/dev-status.svg)](https://david-dm.org/1oginov/gulpdoc?type=dev)
+[![NpmVersion](https://img.shields.io/npm/v/gulpdoc.svg)](https://www.npmjs.com/package/gulpdoc)
+[![dependencies Status](https://david-dm.org/loginov-rocks/gulpdoc/status.svg)](https://david-dm.org/loginov-rocks/gulpdoc)
+[![devDependencies Status](https://david-dm.org/loginov-rocks/gulpdoc/dev-status.svg)](https://david-dm.org/loginov-rocks/gulpdoc?type=dev)
 
 Documentation generator for Gulp tasks.
 
