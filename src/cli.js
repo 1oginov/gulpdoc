@@ -53,8 +53,7 @@ tasks.sort((a, b) => {
 let data = '';
 
 tasks.forEach((task) => {
-  data += `* \`gulp ${task.name}\` - ` +
-      `${task.description.replace(/[\r\n]+/g, ' ')}\n`;
+  data += `* \`gulp ${task.name}\` - ${task.description.replace(/[\r\n]+/g, ' ')}\n`;
 });
 
 fs.writeFileSync(destination, data);

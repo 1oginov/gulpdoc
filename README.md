@@ -1,6 +1,7 @@
 # gulpdoc
 
 [![NpmVersion](https://img.shields.io/npm/v/gulpdoc.svg)](https://www.npmjs.com/package/gulpdoc)
+[![Build Status](https://travis-ci.com/loginov-rocks/gulpdoc.svg?branch=master)](https://travis-ci.com/loginov-rocks/gulpdoc)
 [![dependencies Status](https://david-dm.org/loginov-rocks/gulpdoc/status.svg)](https://david-dm.org/loginov-rocks/gulpdoc)
 [![devDependencies Status](https://david-dm.org/loginov-rocks/gulpdoc/dev-status.svg)](https://david-dm.org/loginov-rocks/gulpdoc?type=dev)
 

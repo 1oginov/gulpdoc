@@ -4,9 +4,10 @@
 class Task {
   /**
    * Parse block comment.
-   * @param {string} comment
-   * @param {string} annotation
-   * @return {{name: string, description: string}}
+   *
+   * @param {string} comment - Comment.
+   * @param {string} annotation - Annotation.
+   * @returns {{name: string, description: string}} Object.
    */
   static parseBlockComment(comment, annotation) {
     const lines = comment.split(/\n+/).
@@ -21,8 +22,7 @@ class Task {
 
       if (words[0].toLowerCase().startsWith('@' + annotation)) {
         if (!words[1]) {
-          throw new Error('Block comment describing Gulp task should have ' +
-              `task name after @${annotation}`);
+          throw new Error(`Block comment describing Gulp task should have task name after @${annotation}`);
         }
 
         name = words[1];
@@ -43,21 +43,20 @@ class Task {
 
   /**
    * Parse line comment.
-   * @param {string} comment
-   * @param {string} annotation
-   * @return {{name: string, description: string}}
+   *
+   * @param {string} comment - Comment.
+   * @param {string} annotation - Annotation.
+   * @returns {{name: string, description: string}} Object.
    */
   static parseLineComment(comment, annotation) {
     const words = comment.trim().split(/\s+/);
 
     if (!words[0].toLowerCase().startsWith('@' + annotation)) {
-      throw new Error('Line comment describing Gulp task should starts with ' +
-          `@${annotation} (case insensitive)`);
+      throw new Error(`Line comment describing Gulp task should starts with @${annotation} (case insensitive)`);
     }
 
     if (!words[1]) {
-      throw new Error('Line comment describing Gulp task should have task ' +
-          `name after @${annotation}`);
+      throw new Error(`Line comment describing Gulp task should have task name after @${annotation}`);
     }
 
     const name = words[1];
@@ -76,8 +75,9 @@ class Task {
 
   /**
    * Task constructor.
-   * @param {Object} comment
-   * @param {string} annotation
+   *
+   * @param {object} comment - Comment.
+   * @param {string} annotation - Annotation.
    */
   constructor(comment, annotation) {
     if (['Block', 'Line'].indexOf(comment.type) === -1) {
@@ -92,11 +92,9 @@ class Task {
     let description;
 
     if (comment.type === 'Block') {
-      ({name, description} = this.constructor.
-          parseBlockComment(comment.value, annotation));
+      ({name, description} = this.constructor.parseBlockComment(comment.value, annotation));
     } else {
-      ({name, description} = this.constructor.
-          parseLineComment(comment.value, annotation));
+      ({name, description} = this.constructor.parseLineComment(comment.value, annotation));
     }
 
     this.name = name;

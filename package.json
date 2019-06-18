@@ -2,9 +2,10 @@
   "name": "gulpdoc",
   "version": "1.1.5",
   "description": "Documentation generator for Gulp tasks",
-  "main": "./src/Gulpdoc.js",
-  "bin": "./src/cli.js",
+  "main": "src/Gulpdoc.js",
+  "bin": "src/cli.js",
   "scripts": {
+    "ci": "npm run lint",
     "lint": "eslint src"
   },
   "repository": {
@@ -25,10 +26,11 @@
   },
   "homepage": "https://github.com/loginov-rocks/gulpdoc",
   "dependencies": {
-    "comments-extractor": "^1.0.7"
+    "comments-extractor": "^1.0.8"
   },
   "devDependencies": {
-    "eslint": "^5.14.1",
-    "eslint-config-google": "^0.12.0"
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0",
+    "eslint-plugin-jsdoc": "^8.1.0"
   }
 }

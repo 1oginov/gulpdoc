@@ -8,10 +8,11 @@ const Task = require('./Task');
 class Gulpdoc {
   /**
    * Get tasks.
-   * @param {string} pattern Glob pattern
-   * @param {string} [annotation='gulptask'] Annotation
-   * @param {Object} [options={}] Glob options
-   * @return {Array<Task>}
+   *
+   * @param {string} pattern - Glob pattern.
+   * @param {string} [annotation='gulptask'] - Annotation.
+   * @param {object} [options={}] - Glob options.
+   * @returns {Array<Task>} Tasks array.
    */
   static getTasks(pattern, annotation = 'gulptask', options = {}) {
     const extractor = new CommentsExtractor(pattern, annotation, options);
