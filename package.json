@@ -29,7 +29,7 @@
     "comments-extractor": "^1.0.8"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.1",
     "eslint-config-google": "^0.13.0",
     "eslint-plugin-jsdoc": "^8.1.0"
   }
