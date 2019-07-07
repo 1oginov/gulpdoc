@@ -31,6 +31,6 @@
   "devDependencies": {
     "eslint": "^6.0.1",
     "eslint-config-google": "^0.13.0",
-    "eslint-plugin-jsdoc": "^11.0.0"
+    "eslint-plugin-jsdoc": "^11.2.1"
   }
 }
