@@ -38,7 +38,7 @@ class Task {
 
     description = description.trim();
 
-    return {name, description};
+    return {description, name};
   }
 
   /**
@@ -70,7 +70,7 @@ class Task {
 
     description = description.trim();
 
-    return {name, description};
+    return {description, name};
   }
 
   /**
