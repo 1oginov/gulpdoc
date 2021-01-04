@@ -2,13 +2,10 @@
 
 [![NpmVersion](https://img.shields.io/npm/v/gulpdoc.svg)](https://www.npmjs.com/package/gulpdoc)
 [![Build Status](https://travis-ci.com/loginov-rocks/gulpdoc.svg?branch=master)](https://travis-ci.com/loginov-rocks/gulpdoc)
-[![dependencies Status](https://david-dm.org/loginov-rocks/gulpdoc/status.svg)](https://david-dm.org/loginov-rocks/gulpdoc)
-[![devDependencies Status](https://david-dm.org/loginov-rocks/gulpdoc/dev-status.svg)](https://david-dm.org/loginov-rocks/gulpdoc?type=dev)
-[![Greenkeeper badge](https://badges.greenkeeper.io/loginov-rocks/gulpdoc.svg)](https://greenkeeper.io/)
 
 Documentation generator for Gulp tasks.
 
-## Quick start
+## Quick Start
 
 ### Install
 
@@ -52,8 +49,9 @@ gulp.task('example:line', function() {
 ```js
 const gulpdoc = require('gulpdoc');
 const tasks = gulpdoc.getTasks('./gulp/*.js');
+
 console.log(tasks);
-// Outputs:
+// Output:
 // [ Task { name: 'example:block', description: 'Gulp task described in block comment before the annotation.' },
 //   Task { name: 'example:line', description: 'Gulp task described in line comment on the annotation line.' } ]
 ```

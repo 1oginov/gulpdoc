@@ -5,7 +5,6 @@
   "main": "src/Gulpdoc.js",
   "bin": "src/cli.js",
   "scripts": {
-    "check": "npm run lint",
     "lint": "eslint src"
   },
   "repository": {
