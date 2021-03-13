@@ -1,7 +1,8 @@
 # gulpdoc
 
 [![npm](https://img.shields.io/npm/v/gulpdoc)](https://www.npmjs.com/package/gulpdoc)
-[![CI](https://github.com/loginov-rocks/gulpdoc/workflows/CI/badge.svg)](https://github.com/loginov-rocks/gulpdoc/actions)
+[![CI](https://github.com/loginov-rocks/gulpdoc/actions/workflows/ci.yml/badge.svg)](https://github.com/loginov-rocks/gulpdoc/actions/workflows/ci.yml)
+[![CD](https://github.com/loginov-rocks/gulpdoc/actions/workflows/cd.yml/badge.svg)](https://github.com/loginov-rocks/gulpdoc/actions/workflows/cd.yml)
 
 Documentation generator for Gulp tasks.
 
